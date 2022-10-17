@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>andrebranco - Superbock</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="photos/icon.png">
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <ul id="menu">
+                <li class="home"><a href="index.html">andrebranco</a>
+
+                </li>
+                <li class="sobre"><a href="sobre.html">sobre</a></li>
+                <div id="menu-button" class="close"></div>
+            </ul>
+        </div>
+        <nav id="menu-mobile">
+            <ul>
+                <li class="home_mobile"><a href="index.html">andrebranco </a></li>
+                <li class="sobre_mobile"><a href="sobre.html">sobre</a></li>
+            </ul>
+        </nav>
+        <div class="arrow">
+            <a href="index.html"><span class="material-icons-outlined">
+                    arrow_back_ios
+                </span></a>
+        </div>
+
+        <div id="titulo">
+            <ul>
+                <li class="ano_projeto">2020</li>
+                <li class="projetoli">
+                    <p class="projeto"><b class="nome_projeto"><span id="superbock_titulo">SuperBock</span></b><br>Packaging | 3D | Identidade Visual</p>
+                </li>
+                 
+            </ul>
+        </div>
+
+        <div class="galeria_projetos_superbock">
+            <img src="photos/superbock_projeto1.jpg" class="foto_s_superbock" alt="Três latas relativas à conquista da Liga Europa.">
+            <img src="photos/superbock_projeto5.jpg" class="foto_l_superbock" alt="Cartaz promocional das embalagens produzidas de título: Ao nacional mais internacional.">
+            <img src="photos/superbock_projeto4.jpg" class="foto_s_superbock" alt="Da esquerda para a direita: Lata relativa à conquista da Super Taça Europeia; Lata relativa à conquista da Liga dos Campeões; Lata respetiva à conquista da Liga Europa.">
+            <img src="photos/superbock_projeto6.jpg" class="foto_l_superbock" alt="Cartaz promocional das embalagens produzidas de título: Ao amigo tripeiro.">
+            <img src="photos/superbock_projeto3.jpg" class="foto_s_superbock" alt="Três latas relativas à conquista da Liga dos Campeões.">
+            <img src="photos/superbock_projeto7.jpg" class="foto_l_superbock" alt="Cartaz promocional das embalagens produzidas de título: É até à última gota.">
+            <img src="photos/superbock_projeto2.jpg" class="foto_s_superbock" alt="Três latas relativas à conquista da Super Taça Europeia.">
+        </div>
+
+
+
+        <div class="access">
+            <label><b>Acessibilidade</b></label>
+            <div class="ouvir"><label>Ouvir o texto</label>
+                <span class="material-icons-outlined" id="botao_audio_superbock">
+                    volume_up
+                </span>
+                <span class="material-icons-outlined" id="botao_audio_off_superbock">
+                    volume_off
+                </span>
+            </div>
+            <div class="tamanho"><label>Tamanho do texto</label>
+                <span class="material-icons-outlined" id="aumentar_size">
+                    add_circle_outline
+                </span>
+                <span class="material-icons-outlined" id="diminuir_size">
+                    remove_circle_outline
+                </span>
+            </div>
+
+        </div>
+
+        <div id="descricao">
+
+            <p>A conquista da “Triplete Europeia” por parte do Futebol Clube do Porto é
+                o ponto principal deste projeto. Esta conquista consiste na vitória das
+                três competições europeias de clubes mais importantes: UEFA Champions
+                League, UEFA SuperCup, UEFA Europa League.
+                Foi criado um produto colecionável, com identidade, e também com
+                muita história. Para isso, foram utilizados padrões tipográficos, com uma textura sobre os mesmos,
+                simbolizando assim a intensidade e a dureza com que os jogadores da equipa
+                do Futebol Clube do Porto encaram os jogos, e mais propriamente essas
+                três finais.</p>
+            <br>
+            <p>Outro ponto importante do conceito desenvolvido é o facto de implementar em
+                cada embalagem desenvolvida uma associação ao equipamento da época em que a conquista aconteceu. Isto foi feito através da representação
+                de uma faixa azul (que logo nos remete para o equipamento principal do
+                Futebol Clube do Porto), que varia de embalagem para embalagem.
+            </p>
+        </div>
+
+
+
+
+        <footer id="footer">
+            <div class="footergeral">
+                <div class="footer1">
+                    <ul class="contacto">
+                        <li><b>contacto</b></li>
+                        <li>+351 934 440 688</li>
+                        <li>andrebranco194@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer3">
+                    <p>Copyright © andrebranco 2022.</p>
+                    <p>Todos os direitos reservados.</p>
+                    <p>Desenvolvido por André Branco.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+<script src="js/script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+<script>
+    const tl = gsap.timeline();
+
+
+    tl.from(".foto_l_superbock", {
+        opacity: 0,
+        duration: 0.5,
+    }, 0.3)
+
+    tl.from(".foto_s_superbock", {
+        opacity: 0,
+        duration: 0.5,
+    }, 0.3)
+
+    var botao_audio_superbock = document.getElementById("botao_audio_superbock");
+
+    var botao_audio_off_superbock = document.getElementById("botao_audio_off_superbock");
+    
+    var audio_superbock = new Audio("audio/superbock_texto.mp3");
+    
+    botao_audio_superbock.addEventListener("click", function(){
+     audio_superbock.load();
+       audio_superbock.play();
+    botao_audio_off_superbock.style.display="inline";
+    botao_audio_superbock.style.display="none";
+})
+
+
+botao_audio_off_superbock.addEventListener("click", function(){
+     audio_superbock.pause();
+        botao_audio_off_superbock.style.display="none";
+        botao_audio_superbock.style.display="inline";
+})
+
+</script>
+
+</html>

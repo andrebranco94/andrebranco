@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>andrebranco</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="photos/icon.png">
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <ul id="menu">
+                <li class="home"><a href="index.html">andrebranco</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="sobre"><a href="sobre.html">sobre</a></li>
+                <div id="menu-button" class="close"></div>
+            </ul>
+        </div>
+        <nav id="menu-mobile">
+            <ul>
+                <li class="home_mobile"><a href="index.html">andrebranco <div class="circle_mobile"></div> </a></li>
+                <li class="sobre_mobile"><a href="sobre.html">sobre</a></li>
+            </ul>
+        </nav>
+        <div id="projetos">
+            <a class="m" href="superbock.html"><span class="text-m"><b>Superbock | F.C.Porto</b> Packaging | 3D</span><img id="superbockprojeto" src="photos/superbock_projeto5.jpg" alt="superbock"></a>
+
+
+
+
+            <a class="l" href="gal.html"><span class="text-l"><b>Galeria Municipal de Arte de Barcelos</b> Identidade Visual</span><img id="galprojeto" src="photos/gal.JPG" alt="galeria municipal de arte de barcelos">
+            </a>
+            <a class="s" href="spideybwb.html"><span class="text-s"><b>Spider-Man BWB</b> Animação 3D</span><img id="spiderprojeto" src="photos/spider.jpg" alt="spiderman black white and blood"></a>
+
+            <a href="euphemism.html"><span class="text-s"><b>this is not a euphemism</b> Design Gráfico</span><img id="euphemismprojeto" src="photos/euphemism.jpg" alt="this is not a euphemism" class="s"></a>
+
+            <a href="ez.html" class="s_ez"><span class="text-s"><b>eZText</b>UI/UX | Design Inclusivo</span> <img id="ezprojeto_s" src="photos/eztext.jpg" alt="eztext"></a>
+            
+            
+            <a href="ez.html" class="l_ez"><span class="text-l"><b>eZText</b>UI/UX | Design Inclusivo</span> <img id="ezprojeto" src="photos/eztext.jpg" alt="eztext"></a>
+
+            
+            
+            <a href="harpa.html" class="l"><span class="text-l"><b>harpa</b>Tipografia | Web Design</span> <img id="harpaprojeto" src="photos/harpa-11.svg" alt="harpa"></a>
+            
+            
+            <a href="finalfit.html" class="l"><span class="text-l"><b>Final Fit</b>Animação2D/3D | Som Design</span> <img id="finalfitprojeto" src="photos/final_fit.jpg" alt="Final Fit"></a>
+
+            <a class="m" href="rioave.html"><span class="text-m"><b>Rio Ave</b> Identidade Visual</span><img id="rioaveprojeto" src="photos/rioave.jpg" alt="rio ave"></a>
+            
+              
+
+
+            <div class="m"> <video autoplay muted loop src="photos/portianim.mp4"></video></div>
+
+
+
+
+        </div>
+
+        <footer id="footer">
+            <div class="footergeral">
+                <div class="footer1">
+                    <ul class="contacto">
+                        <li><b>contacto</b></li>
+                        <li>+351 934 440 688</li>
+                        <li>andrebranco194@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer3">
+                    <p>Copyright © andrebranco 2022.</p>
+                    <p>Todos os direitos reservados.</p>
+                    <p>Desenvolvido por André Branco.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+<script src="js/script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+<script>
+    const tl = gsap.timeline();
+
+
+    tl.from(".m", {
+        opacity: 0,
+        duration: 0.5,
+    }, 0.3)
+
+    tl.from(".s", {
+        opacity: 0,
+        duration: 0.5,
+    }, 0.3)
+
+    tl.from(".l", {
+        opacity: 0,
+        duration: 0.5,
+    }, 0.3)
+
+</script>
+
+</html>

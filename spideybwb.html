@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>andrebranco - Spider-Man BWB</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="photos/icon.png">
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <ul id="menu">
+                <li class="home"><a href="index.html">andrebranco</a>
+
+                </li>
+                <li class="sobre"><a href="sobre.html">sobre</a></li>
+                <div id="menu-button" class="close"></div>
+            </ul>
+        </div>
+        <nav id="menu-mobile">
+            <ul>
+                <li class="home_mobile"><a href="index.html">andrebranco </a></li>
+                <li class="sobre_mobile"><a href="sobre.html">sobre</a></li>
+            </ul>
+        </nav>
+        <div class="arrow">
+            <a href="index.html"><span class="material-icons-outlined">
+                    arrow_back_ios
+                </span></a>
+        </div>
+
+        <div id="titulo">
+            <ul>
+                <li class="ano_projeto">2022</li>
+                <li class="projetoli">
+                    <p class="projeto"><b class="nome_projeto"><span id="spideybwb_titulo">Spider-Man Black White and Blood</span></b><br>3D | Animação 3D</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="galeria_projetos_gal">
+
+
+            <video src="photos/spideybwb.m4v" class="l_gal" autoplay muted loop alt="Animação de título: Spider-Man: Black White and Blood."></video>
+
+        </div>
+
+<div class="access">
+            <label><b>Acessibilidade</b></label>
+                <div class="ouvir"><label>Ouvir o texto</label>
+            <span class="material-icons-outlined" id="botao_audio_spider">
+volume_up
+</span>
+            <span class="material-icons-outlined" id="botao_audio_off_spider">
+volume_off
+</span></div>
+            <div class="tamanho"><label>Tamanho do texto</label>
+            <span class="material-icons-outlined" id="aumentar_size">
+add_circle_outline
+</span>
+                <span class="material-icons-outlined" id="diminuir_size">
+remove_circle_outline
+</span></div>
+            
+            </div>
+        
+        <div id="descricao">
+
+            <p>Este projeto pessoal teve como principal objetivo explorar elementos da animação 3D. Apesar da tridimensionalidade presente, a concepção gráfica da animação tem um aspeto bastante bi-dimensional, característico dos livros de banda desenhada, mais concretamente de uma série intitulada "Black White and Blood", onde apenas existem três cores presentes em todas as histórias: o preto, o branco e o vermelho.
+            </p> <br>
+            <p>A animação possui também alguns elementos característicos da animação tradicional, como as linhas que acompanham o movimento do personagem animado, adicionados na pós produção, num processo frame a frame.</p>
+
+        </div>
+
+
+
+        <footer id="footer">
+            <div class="footergeral">
+                <div class="footer1">
+                    <ul class="contacto">
+                        <li><b>contacto</b></li>
+                        <li>+351 934 440 688</li>
+                        <li>andrebranco194@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer3">
+                    <p>Copyright © andrebranco 2022.</p>
+                    <p>Todos os direitos reservados.</p>
+                    <p>Desenvolvido por André Branco.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+<script src="js/script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+<script>
+    const tl = gsap.timeline();
+
+
+    tl.from(".m", {
+        opacity: 0,
+        duration: 0.5,
+    }, 0.1)
+
+    tl.from(".s", {
+        opacity: 0,
+        duration: 0.5,
+    }, 0.2)
+
+    tl.from(".l", {
+        opacity: 0,
+        duration: 0.5,
+    }, 0.4)
+    
+    var botao_audio_spider=document.getElementById("botao_audio_spider");
+    
+    var botao_audio_off_spider=document.getElementById("botao_audio_off_spider");
+    
+     var audio_spider = new Audio("audio/spider_texto.mp3");
+    
+    botao_audio_spider.addEventListener("click", function(){
+     audio_spider.load();
+       audio_spider.play();
+    botao_audio_off_spider.style.display="inline";
+    botao_audio_spider.style.display="none";
+})
+
+
+botao_audio_off_spider.addEventListener("click", function(){
+     audio_spider.pause();
+        botao_audio_off_spider.style.display="none";
+        botao_audio_spider.style.display="inline";
+})
+
+
+</script>
+
+</html>

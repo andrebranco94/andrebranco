@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>andrebranco - this is not a euphemism</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="photos/icon.png">
+</head>
+
+<body>
+    <div id="container">
+         <div id="nav">
+            <ul id="menu">
+                <li class="home"><a href="index.html">andrebranco</a>
+                    
+                </li>
+                <li class="sobre"><a href="sobre.html">sobre</a></li>
+                <div id="menu-button" class="close"></div>
+            </ul>
+        </div>
+        <nav id="menu-mobile">
+            <ul>
+                <li class="home_mobile"><a href="index.html">andrebranco </a></li>
+                <li class="sobre_mobile"><a href="sobre.html">sobre</a></li>
+            </ul>
+        </nav>
+        <div class="arrow">
+            <a href="index.html"><span class="material-icons-outlined">
+                    arrow_back_ios
+                </span></a>
+        </div>
+
+        <div id="titulo">
+            <ul>
+                <li class="ano_projeto">2021</li>
+                <li class="projetoli">
+                    <p class="projeto"><b class="nome_projeto"><span id="euphemism_titulo">this is not a euphemism</span></b><br>Design gráfico</p>
+                </li>
+            </ul>
+        </div>
+
+         <div class="galeria_projetos_euphemism">
+            <img src="photos/euphemism_project1.jpg" class="foto_s_euphemism">
+            <img src="photos/euphemism_project2.jpg" class="foto_s_euphemism">
+            <img src="photos/euphemism2.jpg" class="foto_l_euphemism">
+            <img src="photos/euphemism_project3.jpg" class="foto_s_euphemism">
+            <img src="photos/euphemism_project4.jpg" class="foto_s_euphemism">
+            <img src="photos/euphemism_project5.jpg" class="foto_s_euphemism">
+            <img src="photos/euphemism_project6.jpg" class="foto_s_euphemism">
+            <img src="photos/euphemism5.jpg" class="foto_l_euphemism">
+            <img src="photos/euphemism8.jpg" class="foto_l_euphemism">
+        </div>
+       <div class="access">
+            <label><b>Acessibilidade</b></label>
+                <div class="ouvir"><label>Ouvir o texto</label>
+            <span class="material-icons-outlined" id="botao_audio_euphemism">
+volume_up
+</span>
+            <span class="material-icons-outlined" id="botao_audio_off_euphemism">
+volume_off
+</span></div>
+            <div class="tamanho"><label>Tamanho do texto</label>
+            <span class="material-icons-outlined" id="aumentar_size">
+add_circle_outline
+</span>
+                <span class="material-icons-outlined" id="diminuir_size">
+remove_circle_outline
+</span></div>
+            
+            </div>
+        
+        <div id="descricao">
+
+            <p>Este projeto tinha como objetivo a produção de um objeto que escondesse uma fotografia que causasse desconforto ao autor. O conceito desenvolvido para este projeto tem como base o conceito de eufemismo. Sendo assim, foram criadas duas personagens antagónicas, sendo que uma representa o eufemismo, e a outro o disfemismo.</p>
+            <br>
+               <p> O suporte escolhido para a apresentação do projeto foi um livro conceptual ilustrado. Através de palavras e algumas ilustrações, o livro desafia o utilizador a ver ou não a imagem insuportável contida no mesmo.</p>
+            <br>
+            <p>
+                Os dois personagens presentes no livro apresentam personalidades completamente distintas, e a interação entre os dois é aquilo que alimenta o utilizador ao longo de toda a experiência.
+                As cores utilizadas são também um aspeto importante do projeto, uma vez que representam, assim como os personagens, ideias contrárias. O personagem que representa o eufemismo apresenta a cor azul (associado à tristeza e à calma), enquanto o outro personagem apresenta a cor vermelha (associada à raiva e à agressividade).
+
+            </p>
+        </div>
+
+       
+
+
+       <footer id="footer">
+            <div class="footergeral">
+            <div class="footer1">
+            <ul class="contacto">
+                <li><b>contacto</b></li>
+                <li>+351 934 440 688</li>
+                <li>andrebranco194@gmail.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer3">
+                <p>Copyright © andrebranco 2022.</p>
+<p>Todos os direitos reservados.</p>
+<p>Desenvolvido por André Branco.</p>
+            </div>
+                </div>
+        </footer>
+    </div>
+
+
+</body>
+
+    <script src="js/script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+    <script>
+    const tl = gsap.timeline();
+
+
+tl.from(".foto_l_euphemism", {
+        opacity:0,
+    duration:0.5,
+    },0.3)
+        
+tl.from(".foto_s_euphemism", {
+        opacity:0,
+    duration:0.5,
+    },0.3)   
+
+        
+        var botao_audio_euphemism=document.getElementById("botao_audio_euphemism");
+        
+        var botao_audio_off_euphemism=document.getElementById("botao_audio_off_euphemism");
+        
+        
+         var audio_euphemism = new Audio("audio/euphemism_texto.mp3");
+    
+    botao_audio_euphemism.addEventListener("click", function(){
+     audio_euphemism.load();
+       audio_euphemism.play();
+    botao_audio_off_euphemism.style.display="inline";
+    botao_audio_euphemism.style.display="none";
+})
+
+
+botao_audio_off_euphemism.addEventListener("click", function(){
+     audio_euphemism.pause();
+        botao_audio_off_euphemism.style.display="none";
+        botao_audio_euphemism.style.display="inline";
+})
+
+        
+    </script>
+    
+</html>

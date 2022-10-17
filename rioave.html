@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+    <title>andrebranco - Rio Ave</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="photos/icon.png">
+</head>
+
+<body>
+    <div id="container">
+         <div id="nav">
+            <ul id="menu">
+                <li class="home"><a href="index.html">andrebranco</a>
+                  
+                </li>
+                <li class="sobre"><a href="sobre.html">sobre</a></li>
+                <div id="menu-button" class="close"></div>
+            </ul>
+        </div>
+        <nav id="menu-mobile">
+            <ul>
+                <li class="home_mobile"><a href="index.html">andrebranco </a></li>
+                <li class="sobre_mobile"><a href="sobre.html">sobre</a></li>
+            </ul>
+        </nav>
+        <div class="arrow">
+            <a href="index.html"><span class="material-icons-outlined">
+                    arrow_back_ios
+                </span></a>
+        </div>
+
+        <div id="titulo">
+            <ul>
+                <li class="ano_projeto">2021</li>
+                <li class="projetoli">
+                    <p class="projeto"><b class="nome_projeto"><span id="rio_ave_titulo">Rio Ave</span></b><br>Identidade visual</p>
+                </li>
+            </ul>
+        </div>
+<div class="galeria_projetos">
+            <img src="photos/rioave1.jpg" class="foto_s">
+            <img src="photos/rioave3.jpg" id="foto_s_grande" class="foto_l">
+            <img src="photos/rioave2.jpg" class="foto_s">
+            <video autoplay muted loop src="photos/Andre_Branco_16902_P3_Tipografia.m4v" class="video"></video>
+            <img src="photos/rioave4.jpg" class="foto_s">
+            <video autoplay muted loop src="photos/Andre_Branco_16902_P3_Post_Onze.m4v" class="foto_s"></video>
+            <video autoplay muted loop src="photos/Andre_Branco_16902_P3_Comportamento_Marca.m4v" class="video"></video>
+            <iframe src="https://www.youtube.com/embed/0oW0MtfwLO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            <video autoplay muted loop src="photos/Andre_Branco_16902_P3_Post_Golo.m4v" class="foto_s"></video>
+
+
+        </div>
+        <div class="access">
+            <label><b>Acessibilidade</b></label>
+                <div class="ouvir"><label>Ouvir o texto</label>
+            <span class="material-icons-outlined" id="botao_audio_rioave">
+volume_up
+</span>
+            <span class="material-icons-outlined" id="botao_audio_off_rioave">
+volume_off
+</span></div>
+            <div class="tamanho"><label>Tamanho do texto</label>
+            <span class="material-icons-outlined" id="aumentar_size">
+add_circle_outline
+</span>
+                <span class="material-icons-outlined" id="diminuir_size">
+remove_circle_outline
+</span></div>
+            
+            </div>
+        
+        <div id="descricao">
+
+            <p>Cidade e clube em movimento: do tradicional ao contemporâneo.
+                Com todo o desenvolvimento da cidade e do clube, o conceito de
+                movimento está presente em todo o projeto, através de todas as
+                animações desenvolvidas, entre outros vários aspetos.
+                Todos os suportes desenvolvidos seguem a mesma linguagem
+                gráfica, utilizando sempre como conceito-base o conceito referido
+                em cima. Contudo, existem vários pormenores, como o padrão
+                desenvolvido, que fortalecem o conceito desenvolvido, acrescentando-
+                lhe mais valor, e carga simbólica. </p>
+                
+            <br>
+                <p>Um clube precisa de identidade. Uma das formas mais eficazes de
+                criar uma identidade poderosa para um clube, ou marca, é a escolha
+                tipográfica.
+                Foi escolhida a tipografia Config Condensed, uma tipografia moderna,
+                condensada e funcional.
+                De modo a que a identidade desenvolvida tivesse mais impacto, e
+                que fosse mais identificativa do clube, foram feitas algumas mudanças
+                em alguns caracteres da tipografia.
+                Uma das palavras que melhor define os adeptos vilacondenses é a
+                sua união. Por essa razão, a estratégia tipográfica utilizada para
+                comunicar esse aspeto foi a alteração do comprimento dos braços
+                dos caracteres, variando também o peso dos caracteres que não
+                possuem braços, entre light e bold.</p>
+            
+        </div>
+
+        
+
+
+        <footer id="footer">
+            <div class="footergeral">
+            <div class="footer1">
+            <ul class="contacto">
+                <li><b>contacto</b></li>
+                <li>+351 934 440 688</li>
+                <li>andrebranco194@gmail.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer3">
+                <p>Copyright © andrebranco 2022.</p>
+<p>Todos os direitos reservados.</p>
+<p>Desenvolvido por André Branco.</p>
+            </div>
+                </div>
+        </footer>
+    </div>
+
+
+</body>
+<script src="js/script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+    <script>
+    const tl = gsap.timeline();
+
+
+tl.from(".foto_s", {
+        opacity:0,
+    duration:0.5,
+    },0.3)
+        
+tl.from(".foto_l", {
+        opacity:0,
+    duration:0.5,
+    },0.3)   
+
+tl.from(".video", {
+        opacity:0,
+    duration:0.5,
+    },0.3) 
+        
+     
+        var botao_audio_rioave=document.getElementById("botao_audio_rioave");
+        
+        var botao_audio_off_rioave=document.getElementById("botao_audio_off_rioave");
+        
+        var audio_rioave = new Audio("audio/rioave_texto.mp3");
+        
+        botao_audio_rioave.addEventListener("click", function(){
+     audio_rioave.load();
+       audio_rioave.play();
+    botao_audio_off_rioave.style.display="inline";
+    botao_audio_rioave.style.display="none";
+})
+
+
+botao_audio_off_rioave.addEventListener("click", function(){
+     audio_rioave.pause();
+        botao_audio_off_rioave.style.display="none";
+        botao_audio_rioave.style.display="inline";
+})
+        
+    </script>
+    
+    
+</html>
